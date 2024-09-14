@@ -1,0 +1,21 @@
+
+.roundBackground{
+    margin-left: -40px;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    line-height: 80px;
+    border: 1px solid rgb(221, 221, 221);
+    padding: 30px;
+    margin: auto;
+    cursor: pointer;
+    color: #1a76d1;
+    border-radius: 50%;
+    transition: background-color 0.6s, transform 0.6s; /* Add transition properties with units */
+
+}
+
+.roundBackground:hover{
+    color: var(--light-text);
+    background-color: #1a76d1;
+}
