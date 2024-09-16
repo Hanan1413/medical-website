@@ -10,13 +10,13 @@ import styles from './Slider.module.css';
 
 const Slider = () => {
   return (
-    <Carousel>
-      <Carousel.Item className={styles.carouselItem}   >
+    <Carousel >
+      <Carousel.Item className={styles.carouselItem}    >
         <ExampleCarouselImage text="First slide" src={slide1} alt="side1" />
         <Carousel.Caption className={ styles.carouselCaptionCustom  } >
           <div className={styles.animatedText}>
-          <h1 className="mb-4 header-font"  >نحن نقدم خدمة طبية يمكنك الوثوق بها</h1>
-          <p className="mb-5 headr-text">تمتع بأفضل العلاجات والخدمات الطبية التي تلبي احتياجاتك وتوفر لك الراحة.</p>
+          <h1 className=" m-0 md-mb-5 header-font"  >نحن نقدم خدمة طبية يمكنك الوثوق بها</h1>
+          <p className="  mt-3 headr-text">تمتع بأفضل العلاجات والخدمات الطبية التي تلبي احتياجاتك وتوفر لك الراحة.</p>
           <div className="d-flex gap-4  text-center justify-content-center align-items-center">
             
           <Button value="اعرف المزيد" variant="primary" as="input" type="button" />
@@ -29,11 +29,7 @@ const Slider = () => {
           </div>
           <div>
           </div>
-
-      
         </Carousel.Caption>
-
-
       </Carousel.Item>
       
       <Carousel.Item>
@@ -41,10 +37,11 @@ const Slider = () => {
           text="Second slide"
           src={slide2}
           alt="Second slide"
+        className="h-100"
         />
         <Carousel.Caption  className={styles.carouselCaptionCustom}>
           <div className={styles.animatedText}>
-          <h1  className="header-font"> خدمة طبية متميزة بأيدي خبراء</h1>
+          <h1  className="header-font w-100"> خدمة طبية متميزة بأيدي خبراء</h1>
           <p  className="headr-text mb-5">رعاية طبية فائقة الجودة لضمان راحتك وسلامتك.</p>
           <div className="d-flex gap-4 mr-8 text-center justify-content-center align-items-center">
             

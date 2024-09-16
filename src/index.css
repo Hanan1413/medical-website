@@ -13,6 +13,17 @@
 
 body{
   font-family: var(--Noto-Arabic);
+  height: 100%;
+  font-size: 19px;
+
+
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 
 }
 
@@ -22,13 +33,27 @@ h1{
 
 p{
   color: var(--text-color);
+  font-size: 20px;
 }
 
-
+a {
+  text-decoration: none !important;
+}
 .white-text{
   color:var(--light-text)
 }
+.dark-text{
+  color:var(--dark-text-color)
 
+}
+.blue-text{
+  color: var(--primary-color);
+}
+
+.gray-text{
+  color: var(--text-color);
+
+}
 .header-font{
   font-family: "Noto Kufi Arabic", sans-serif;
   font-optical-sizing: auto;
