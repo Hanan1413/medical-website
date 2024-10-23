@@ -1,5 +1,4 @@
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import {  faStethoscope, faStaffSnake, faUserNurse, faScissors, faDollarSign, faClock, faCheck, faTimes, faHeart, faTooth, faEarListen, faEye, faTint} from '@fortawesome/free-solid-svg-icons';
 import firstDoc from '../assets/first-doc.webp';
@@ -7,7 +6,6 @@ import secondDoc from '../assets/scond-doc.webp';
 import thirdDoc from '../assets/third-doc.webp';
 import fourthDoc from '../assets/fourth-doc.webp';
 
-<FontAwesomeIcon icon="fa-solid " />
 
 
 
@@ -31,7 +29,7 @@ export const infoData = [
     id: 3,
     title: "ساعات العمل",
     description:
-      "تعمل عيادتنا وفقًا للأوقات التالية:الاثنين - الجمعة: 8:00 ص - 8:00 م<السبت: 9:00 ص -6:30 م الأحد - الخميس: 9:00 ص - 3:00 م< ",
+      "تعمل عيادتنا وفقًا للأوقات التالية:الاثنين - الجمعة: 8:00 ص - 8:00 <السبت: 9:00 ص -6:30 م الأحد - الخميس: 9:00 ص - 3:00 م< ",
     linkText: "تعرف على المزيد",
   },
 ];
@@ -145,33 +143,53 @@ export const doctors = [
 
 export const treatments = [
   {
+    id:1,
     service: "العلاج العام",
     description: "يقدم العلاج العام للأمراض والإصابات الشائعة، ويشمل الفحص الطبي العام وإعطاء العلاج اللازم.",
     icon: faHeart
   },
   {
+    id:2,
     service: "تبييض الأسنان",
     description: "تقديم خدمات تبييض الأسنان باستخدام تقنيات متطورة لتفتيح لون الأسنان وتحسين المظهر العام.",
     icon: faTooth
   },
   {
+    id:3,
     service: "جراحة القلب",
     description: "إجراء عمليات القلب المفتوح وعلاج أمراض القلب والشرايين باستخدام أحدث الأساليب الجراحية.",
     icon: faHeart
   },
   {
+    id:4,
     service: "علاج الأذن",
     description: "علاج اضطرابات الأذن والجهاز السمعي، بما في ذلك التهابات الأذن وفقدان السمع.",
     icon: faEarListen
   },
   {
+    id:5,
     service: "مشاكل الرؤية",
     description: "تشخيص وعلاج مشاكل الرؤية المختلفة باستخدام أحدث تقنيات الفحص الطبي والعلاج.",
     icon: faEye
   },
   {
+    id:6,
     service: "نقل الدم",
     description: "خدمات نقل الدم لإنقاذ الحياة في حالات الطوارئ أو عند الحاجة لتعويض الدم المفقود.",
     icon: faTint
   }
 ];
+
+
+
+export const days = [
+  { id: 1, schedule: "الـاثنين الساعة 8:00 ص  " },
+  { id: 2, schedule: "الـالثلاثاء  الساعة 8:00ص " },
+  { id: 3, schedule: "الأربعاء  الساعة 8:00ص " },
+  { id: 4, schedule: "الالخميس  الساعة 8:00 ص    " },
+  { id: 5, schedule: "االجمعة  الساعة 8:00 ص   " },
+  { id: 6, schedule: "الـسبت  الساعة 9:00 ص   " },
+  { id: 7, schedule: "االأحد  الساعة 9:00 ص   " }
+];
+
+  

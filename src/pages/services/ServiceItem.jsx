@@ -1,16 +1,19 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const ServiceItem = ({treatment}) => {
-  const { service, description, icon} = treatment;
+const ServiceItem = ({ treatment }) => {
+  const { service, description, icon } = treatment;
   return (
-    <div >
-            <FontAwesomeIcon icon={icon} /> 
+    <div className="p-5 service-item d-flex flex-column  ">
+      <div className="d-flex justify-content-start gap-3 mb-4">
 
-      <p >{service}</p>
-      <p style={{width:"25%"}}>{description}</p>
+        <h4 className="dark-text">{service}</h4>
+        <FontAwesomeIcon className="fa-2xl blue-text"  icon={icon} />
+
+      </div>
+      <p className="fs-7">{description}</p>
     </div>
-  )
-}
+  );
+};
 
 export default ServiceItem;

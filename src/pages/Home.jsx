@@ -53,6 +53,7 @@ const Home = () => {
         <div className="d-flex  flex-column flex-md-row justify-content-center h-100 gap-5 col-12 p-5  " style={{ backgroundColor: "#f9f9f9", height:'400px' }}
           >
           {prices.map(itemPrice => (
+            
             <Price  key={itemPrice.id} itemPrice={itemPrice} />
           ))}
           </div>

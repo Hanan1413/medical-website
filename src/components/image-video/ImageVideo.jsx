@@ -4,10 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import styles from "./image.module.css";
 import Dental from "../../assets/denta-clinic.mp4";
-import Modal from 'react-bootstrap/Modal';
+import Modal from "react-bootstrap/Modal";
 
-
-const ImageVideo = ({props}) => {
+const ImageVideo = ({ props }) => {
   const [playVideo, setPlayVideo] = useState(false);
   return (
     <>
@@ -26,36 +25,32 @@ const ImageVideo = ({props}) => {
             icon={faPlay}
             className={`${styles.waves} ${styles.wavesAnimation} position-absolute top-50 start-50 translate-middle fs-3`}
             onClick={() => setPlayVideo(!playVideo)}
-            
           />
           {playVideo && (
-         
-         <Modal
-         {...props}
-          className="bg-transparent"
-         size="lg"
-         aria-labelledby="contained-modal-title-vcenter"
-         centered
-         show={playVideo}
-         onHide={() => setPlayVideo(false)}
-
-
-       >
-         <Modal.Header closeButton className="border-0" >
-         
-         </Modal.Header>
-         <Modal.Body 
-          >
-    
-             <div className={styles.content}>
-             <video controls width="100%" height="100%" className={styles.video}>
-                <source src={Dental} type="video/mp4" />
-             </video>
-             </div>
-         </Modal.Body>
-    
-       </Modal>
-            
+            <Modal
+              {...props}
+              className="bg-transparent"
+              size="lg"
+              aria-labelledby="contained-modal-title-vcenter"
+              centered
+              show={playVideo}
+              onHide={() => setPlayVideo(false)}
+            >
+              <Modal.Header closeButton className="border-0"></Modal.Header>
+              <Modal.Body>
+                <div className={styles.content}>
+                  <video
+                    controls
+                    width="100%"
+                    height="100%"
+                    className={styles.video}
+                    muted 
+                  >
+                    <source src={Dental} type="video/mp4" />
+                  </video>
+                </div>
+              </Modal.Body>
+            </Modal>
           )}
         </div>
 

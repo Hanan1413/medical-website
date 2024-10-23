@@ -14,9 +14,9 @@ const Price = ({ itemPrice }) => {
       <h4 className="dark-text blue-text"> {title}</h4>
       <p className="m-0">{price}</p>
       <ul>
-        {itemPrice.points.map((item) => (
-          <li className="d-flex gap-3 text-right  justify-content-end mb-3">
-            <p className="m-0 fs-6 ">{item.text} </p>
+        {points.map((item) => (
+          <li  id={ item.id} className="d-flex gap-3 text-right  justify-content-end mb-3">
+            <li className="m-0 fs-6 ">{item.text} </li>
             <FontAwesomeIcon
               icon={item.icon}
               className={item.isCorrect ? "blue-text" : "gray-text"}
